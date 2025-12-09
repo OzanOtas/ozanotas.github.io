@@ -178,6 +178,9 @@ collections:
   notes:
     output: true
     permalink: /notes/:title/
+  archive:
+    output: true
+    permalink: /archive/:title/
 
 # Defaults
 defaults:
@@ -192,6 +195,17 @@ defaults:
       comments: true
       share: true
       related: true
+  
+  # _archive (Blogger'dan gelen eski yazılar)
+  - scope:
+      path: ""
+      type: archive
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: false
 
   # _pages
   - scope:
