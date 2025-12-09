@@ -12,24 +12,20 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "Work in Progress"
 title_separator          : "-"
 name                     : &name "Ozan Otaş"
-description              : &description "Academic portfolio of Ozan Otaş"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : "https://ozanotas.github.io" # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+description              : &description "Academic portfolio of Ozan Otaş"
+url                      : "https://ozanotas.github.io"
+baseurl                  : ""
 repository               : "ozanotas/ozanotas.github.io"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+# Site Author
 author:
-  # Biographic information
   avatar           : "Dergipark_pp.jpg"
   name             : "Dr. Ozan Otaş"
   bio              : "Postdoctoral Researcher"
   location         : "Berlin"
-  employer         : #
-  uri              : # URL
-  email            : "ozanotas@gmail.com" 
+  employer         : 
+  uri              : 
+  email            : "ozanotas@gmail.com"
 
   # Academic websites
   linkedin         : "ozan-otas"
@@ -39,35 +35,37 @@ author:
   scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57194720651"
   pubmed           : "https://pubmed.ncbi.nlm.nih.gov/?term=hasan+ozan+ota%C5%9F&sort=date"
 
-# Publication Category - The following the list of publication categories and their headings
+# Publication Category
 publication_category:
   books:
     title: 'Books'
   manuscripts:
-    title: 'Journal Articles'    
+    title: 'Journal Articles'
   conferences:
     title: 'Conference Papers'
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
-breadcrumbs              : false # true, false (default)
+teaser                   :
+breadcrumbs              : false
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+read_more                : "disabled"
+talkmap_link             : false
+
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               :
   disqus:
     shortname            :
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               :
   facebook:
     appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    num_posts            :
+    colorscheme          :
+
 staticman:
   allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
+  branch                 : "gh-pages"
   commitMessage          : "New comment."
   filename               : comment-{@timestamp}
   format                 : "yml"
@@ -80,18 +78,17 @@ staticman:
     date:
       type               : "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+        format           : "iso8601"
 
+atom_feed:
+  hide                   : false
+  path                   :
 
 # SEO Related
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
-
 
 # Social Sharing
 twitter:
@@ -100,22 +97,19 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+og_image                 :
+og_description           :
 
+social:
+  type                   :
+  name                   :
+  links: []
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               : "false"
   google:
     tracking_id          :
-
 
 # Reading Files
 include:
@@ -155,14 +149,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -175,8 +167,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# These settings control the types of collections used by the template
+# Collections (BLOG / NOTES / PUBLICATIONS)
 collections:
   posts:
     output: true
@@ -187,14 +178,10 @@ collections:
   notes:
     output: true
     permalink: /notes/:title/
-  archive:
-    output: true
-    permalink: /archive/:title/
 
-
-# These settings control how pages and collections are included in the site
+# Defaults
 defaults:
-  # _posts
+  # _posts (these senin "Notes → Posts" içeriğin olacak)
   - scope:
       path: ""
       type: posts
@@ -205,6 +192,7 @@ defaults:
       comments: true
       share: true
       related: true
+
   # _pages
   - scope:
       path: ""
@@ -212,15 +200,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+
   # _publications
   - scope:
       path: ""
@@ -230,37 +210,15 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-
 
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  style: compressed
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Europe/Berlin # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: Europe/Berlin
 
 # Plugins
 plugins:
@@ -280,38 +238,15 @@ whitelist:
   - jekyll-redirect-from
   - jemoji
 
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
+# Archives (kategori / tag sayfaları)
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
 
 # HTML Compression
-# - https://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:
