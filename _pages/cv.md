@@ -77,8 +77,8 @@ Université libre de Bruxelles, Belgium (06/2015 – 09/2015)
 <br>
 ## Teaching & Mentoring  
 **Teaching**  
-• Instructor — *Cancer Genomics Nano Course*, MPIMG (11/2022)  
-• Teaching Assistant — *Cell Biology Laboratory (BIO 106)*, Boğaziçi University (2017)  
+• Instructor: *Cancer Genomics Nano Course*, MPIMG (11/2022)  
+• Teaching Assistant: *Cell Biology Laboratory (BIO 106)*, Boğaziçi University (2017)  
 
 **Mentoring**  
 • Postdoctoral Mentor: One MSc student, FLI (2025)  
