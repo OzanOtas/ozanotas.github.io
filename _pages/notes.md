@@ -5,15 +5,17 @@ permalink: /notes/
 author_profile: true
 ---
 
-Welcome to my notes. Here you can find my latest posts and browse the full archive.
+Welcome to my notes. Here I keep two different streams of writing:
+
+- **Posts** – recent, mostly scientific or work-related notes.
+- **Archive** – older essays and blog posts originally written on Blogger.
 
 <div class="feature__wrapper">
 
   <div class="feature__item">
     <h2>Posts</h2>
     <p>
-      Short reflections, technical notes, and ongoing ideas –
-      everything that doesn’t fit neatly into a paper.
+      Recent reflections, technical notes, and science-related writing.
     </p>
     <p>
       <a class="btn btn--primary" href="{{ '/posts/' | relative_url }}">
@@ -25,8 +27,7 @@ Welcome to my notes. Here you can find my latest posts and browse the full archi
   <div class="feature__item">
     <h2>Archive</h2>
     <p>
-      Prefer to explore things chronologically?  
-      Browse all posts grouped by year.
+      Migrated pieces from my old Blogger days, organised by year.
     </p>
     <p>
       <a class="btn btn--info" href="{{ '/archive/' | relative_url }}">
