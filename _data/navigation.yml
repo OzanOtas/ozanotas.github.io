@@ -10,12 +10,12 @@
 main:
   - title: "About"
     url: /
-    
+
   - title: "CV"
     url: /cv/
-  
+
   - title: "Publications"
     url: /publications/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
+
+  - title: "Notes"
+    url: /notes/
