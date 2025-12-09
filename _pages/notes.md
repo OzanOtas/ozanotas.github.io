@@ -7,15 +7,43 @@ author_profile: true
 
 Welcome to my notes. Here you can find my latest posts and browse the full archive.
 
-## Posts
+<div class="feature__wrapper">
 
-You can find all posts on the dedicated posts page:
+  <div class="feature__item">
+    <h2>Posts</h2>
+    <p>
+      Short reflections, technical notes, and ongoing ideas –
+      everything that doesn’t fit neatly into a paper.
+    </p>
+    <p>
+      <a class="btn btn--primary" href="{{ '/posts/' | relative_url }}">
+        View all posts →
+      </a>
+    </p>
+  </div>
 
-- [View all posts →](/posts/)
+  <div class="feature__item">
+    <h2>Archive</h2>
+    <p>
+      Prefer to explore things chronologically?  
+      Browse all posts grouped by year.
+    </p>
+    <p>
+      <a class="btn btn--info" href="{{ '/archive/' | relative_url }}">
+        Browse the archive →
+      </a>
+    </p>
+  </div>
 
-Below are the most recent posts:
+</div>
+
+---
+
+## Latest posts
 
 {% assign recent_posts = site.posts | sort: "date" | reverse | slice: 0,5 %}
+
+{% if recent_posts.size > 0 %}
 <ul>
 {% for post in recent_posts %}
   <li>
@@ -24,9 +52,6 @@ Below are the most recent posts:
   </li>
 {% endfor %}
 </ul>
-
-## Archive
-
-If you prefer to browse posts by year, use the archive:
-
-- [Browse the archive →](/archive/)
+{% else %}
+<p>No posts yet. Stay tuned.</p>
+{% endif %}
