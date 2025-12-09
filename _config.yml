@@ -180,16 +180,16 @@ kramdown:
 collections:
   posts:
     output: true
-    permalink: /:posts/:title/
+    permalink: /posts/:title/
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: /publications/:title/
   notes:
     output: true
-    permalink: /:notes/:title/
+    permalink: /notes/:title/
   archive:
     output: true
-    permalink: /:archive/:title/
+    permalink: /archive/:title/
 
 
 # These settings control how pages and collections are included in the site
