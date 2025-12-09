@@ -2,7 +2,7 @@
 title: "CRM1 inhibitory and antiproliferative activities of novel 4'-alkyl substituted klavuzon derivatives"
 collection: publications
 permalink: /publication/klavuzon-derivatives-crm1
-date: 2017-09-01
+date: 2017-08-15
 venue: "Bioorganic & Medicinal Chemistry"
 paperurl: "https://doi.org/10.1016/j.bmc.2017.06.030"
 citation: "Kanbur, T., Kara, M., Kutluer, M., Şen, A., Delman, M., Alkan, A., Otaş, H. O., Akçok, İ., & Çağır, A. (2017). CRM1 inhibitory and antiproliferative activities of novel 4'-alkyl substituted klavuzon derivatives. Bioorganic & Medicinal Chemistry, 25(16), 4444–4451."
